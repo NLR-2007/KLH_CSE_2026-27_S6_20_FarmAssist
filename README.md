@@ -144,9 +144,9 @@ flowchart TD
 | 7 | **Bipartite Matching** | a different fertilizer assigned to each crop, by Kuhn's augmenting paths | `O(V × E)` |
 | 8 | **Randomized QuickSort** | the ordering of every ranked list on screen | `O(n log n)` expected |
 
-The **Review 1 build** is a deliberately small cut of this — **Aho–Corasick, KMP and
-Rabin–Karp only**, over 12 articles and 8 diseases, so all three can be followed end to
-end on one screen during the viva.
+The **[Review 1 build](review-1/)** is a deliberately small cut of this — **Aho–Corasick,
+KMP and Rabin–Karp only**, over 12 articles and 8 diseases, so all three can be followed
+end to end on one screen during the viva. It is the build in the transcript above.
 
 ---
 
@@ -182,19 +182,38 @@ The screen is drawn on one 78-column grid, in colour, with box-drawing borders. 
 detected at start up and both have an escape hatch: `color off` for plain text,
 `ascii on` for `+---+` borders.
 
-> **Source & data:** the Java tree and the knowledge base live in the course repository —
-> [`NLR-2007/2520030366_DSA-03`](https://github.com/NLR-2007/2520030366_DSA-03) →
-> `Project/FarmAssist/`.
+To run the **Review 1 build** instead — the same three algorithms, small enough to follow
+by eye — go into [`review-1/`](review-1/) and double-click its own `run.bat`.
+
+> Both builds compile from source on every launch. There is no jar to download, nothing to
+> install, and `out/` is disposable — delete it and the next run rebuilds it.
 
 ---
 
 ## In this repository
 
-| | |
-|---|---|
-| 📊 `Review-01.pptx` | the Review 1 deck |
-| 📝 `Team_20_FarmAssist_Project_Abstract.docx` | the one-page project abstract |
-| 📖 `README.md` | this page |
+```
+KLH_CSE_2026-27_S6_20_FarmAssist/
+├── FarmAssist.bat                  double-click this — opens a terminal, then runs
+├── run.bat                         compile + run inside a terminal you already have
+├── src/
+│   ├── algo/                       THE EIGHT ALGORITHMS — pure, no project logic
+│   ├── model/                      Crop · Disease · Fertilizer · Pest · Article
+│   ├── engine/                     spelling, entities, intent, search, diagnosis,
+│   │                               planning, recommendation, loading
+│   ├── ui/                         the chat loop, the 78-column theme, the demo
+│   └── util/                       the algorithm trace
+├── data/                           the knowledge base — 8 editable text files
+├── review-1/                       the three-algorithm build shown at Review 1
+├── PROJECT.md                      the deep documentation: pipeline, demo script,
+│                                   full layout, complexity table
+├── Review-01.pptx                  the Review 1 deck
+└── Team_20_FarmAssist_Project_Abstract.docx
+```
+
+📖 **[PROJECT.md](PROJECT.md)** is the one to read before the viva — it carries the
+demo script, the exact question to type for each of the eight algorithms, and where
+every one of them lives in the tree.
 
 ---
 

@@ -1,0 +1,6 @@
+# compiled classes, rebuilt by the launchers on every run
+out/
+*.class
+
+# working copies
+.backup/
