@@ -154,13 +154,13 @@ end to end on one screen during the viva. It is the build in the transcript abov
 
 | File | Rows | Holds |
 |---|--:|---|
-| `crops.csv` | 63 | season, soil, water need, N-P-K, duration, rainfall, spacing, varieties, yield |
-| `diseases.csv` | 64 | symptoms and treatment |
-| `pests.csv` | 44 | damage and control |
-| `fertilizers.csv` | 38 | NPK, price, benefit |
-| `articles.csv` | 62 | the documents the search reads |
-| `symptoms.csv` | 74 | the patterns loaded into the automaton |
-| `synonyms.csv` | 396 | local and alternate names mapped to one word |
+| `crops.txt` | 63 | season, soil, water need, N-P-K, duration, rainfall, spacing, varieties, yield |
+| `diseases.txt` | 64 | symptoms and treatment |
+| `pests.txt` | 44 | damage and control |
+| `fertilizers.txt` | 38 | NPK, price, benefit |
+| `articles.txt` | 62 | the documents the search reads |
+| `symptoms.txt` | 74 | the patterns loaded into the automaton |
+| `synonyms.txt` | 396 | local and alternate names mapped to one word |
 
 Plain text, `|` separated, `#` for comments. **Add a row and the program picks it up on
 the next run** — no code change, no rebuild of any index.
